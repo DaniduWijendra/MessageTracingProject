@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/second" name="Second" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" uri-template="/sample">
+        <inSequence>
+            <log level="custom">
+                <property name="Hello" value="Welcome Test2"/>
+            </log>
+            <send>
+                <endpoint key="Test2EP"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

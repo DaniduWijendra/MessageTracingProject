@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="TestEp1" xmlns="http://ws.apache.org/ns/synapse">
+    <http method="get" statistics="enable" trace="enable" uri-template="https://run.mocky.io/v3/676cb12d-49d2-4346-8652-3e48f6de2323">
+        <suspendOnFailure>
+            <initialDuration>-1</initialDuration>
+            <progressionFactor>1.0</progressionFactor>
+        </suspendOnFailure>
+        <markForSuspension>
+            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+        </markForSuspension>
+    </http>
+</endpoint>
